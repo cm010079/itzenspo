@@ -2,8 +2,8 @@
 
 <main>
   <div class="main-wrapper">
-    <h1 class="header"><?php single_cat_title(); ?></h1>
-    <div class="post-list">
+    <h1 class="header"　><?php single_cat_title(); ?></h1>
+    <div class="post-list　live_movie_list">
       <?php
         if(have_posts()):
           while(have_posts()) : the_post();

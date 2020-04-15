@@ -7,15 +7,18 @@ jQuery(function(){
   })
 })
 
-$(function () {
-  var index = 0;
-  $('li').click(function() {
-    if (index != $('li').index(this)) {
-      index = $('li').index(this);
-      // タブの内容
-      $('article').hide().eq(index).fadeIn('fast');
-      // タブ
-      $('li').removeClass('selected').eq(index).addClass('selected');
-    }
-  });
-});
+(function($) {
+	$(document).ready(function() {
+		$('.tab_area:first').show();
+		$('.tab li:first').addClass('active');
+ 
+		$('.tab li').click(function() {
+			$('.tab li').removeClass('active');
+			$(this).addClass('active');
+			$('.tab_area').hide();
+ 
+			$(jQuery(this).find('a').attr('href')).fadeIn();
+			return false;
+		});
+	});
+})(jQuery);
