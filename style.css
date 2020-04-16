@@ -446,3 +446,13 @@ input[type="submit"]{
 .tab-switch {
   display: none;
 }
+
+.comment-notes {
+  display: none ;
+}
+.comment-form-email {
+  display: nome;
+}
+.comment-form-url {
+  display: nome;
+}

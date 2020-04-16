@@ -46,5 +46,11 @@ function dev_admin_footer(){
     <?php
 }
 
+//YoutubeのURLから埋め込みURLを出力する
+function view_youtube($target_text){
+  preg_match('/watch\?v=(\w+([-.]\w+)*).*/', $target_text, $match);//正規表現で個別IDを取得する
 
+  $youtube_view_url = "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/".$match[1]."\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope\; picture-in-picture\" allowfullscreen></iframe>";  
+  echo $youtube_view_url;
+}
 ?>
