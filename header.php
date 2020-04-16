@@ -34,8 +34,10 @@
 </header>
 <nav class="sp-menu">
   <ul>
+  <div class="container">
     <li><a href="/">HOME</a></li>
     <li><a href="/">NEWS</a></li>
     <li><a href="/all_movies/">MOVIES</a></li>
   </ul>
+</div>
 </nav>

@@ -7,18 +7,23 @@ jQuery(function(){
   })
 })
 
-(function($) {
-	$(document).ready(function() {
-		$('.tab_area:first').show();
-		$('.tab li:first').addClass('active');
+var _window = $(window),
+    _header = $('.site-header'),
+    heroBottom,
+    startPos,
+    winScrollTop;
  
-		$('.tab li').click(function() {
-			$('.tab li').removeClass('active');
-			$(this).addClass('active');
-			$('.tab_area').hide();
+_window.on('scroll',function(){
+    winScrollTop = $(this).scrollTop();
+    heroBottom = $('.hero').height();
+    if (winScrollTop >= startPos) {
+        if(winScrollTop >= heroBottom){
+            _header.addClass('hide');
+        }
+    } else {
+        _header.removeClass('hide');
+    }
+    startPos = winScrollTop;
+});
  
-			$(jQuery(this).find('a').attr('href')).fadeIn();
-			return false;
-		});
-	});
-})(jQuery);
+_window.trigger('scroll');

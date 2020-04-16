@@ -20,6 +20,7 @@ header{
   display: flex;
   align-items: center;
   padding: 20px 40px;
+  
 }
 
 .logo{
@@ -64,7 +65,7 @@ header .quest_button:hover{
 }
 
 footer{
-  background: #2d2d2d;
+  background: #468ddf;
   padding: 20px;
   text-align: center;
 }
@@ -149,6 +150,7 @@ header{
   background-size: 10px 20px;
   background-position: right 20px center;
   background-repeat: no-repeat;
+  border-radius: 23px;
 }
 
 .sp-menu{
@@ -186,8 +188,9 @@ main{
 }
 
 .header{
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 0;
+  color: #506ce9;
 }
 
 .main-wrapper{
@@ -354,24 +357,20 @@ input[type="submit"]{
   height: 32px;
 }
 
-.sub-title{
-  font-size: 18px;
-  color: #aaa;
-}
-
-.live_movie_list section{
+.movie_list section{
   background: #fff;
   padding: 10px;
   margin-bottom: 10px;
+  border-radius: 23px;
 }
 
-.live_movie_list section:after{
+.movie_list section:after{
   display: block;
   content: "";
   clear: both;
 }
 
-.live_movie_list section p{
+.movie_list section p{
   margin: 0;
 }
 
@@ -382,18 +381,15 @@ input[type="submit"]{
   height: 120px;
 }
 
-.member-name{
+.post_title{
   font-size: 18px;
   margin: 0;
 }
 
-.youtube_url{
-  font-size: 18px;
+.post-meta{
+  color: rgb(122, 122, 122);
+  font-size: 14px;
   margin: 0;
-}
-
-.myteam{
-  display: none;
 }
 
 .tab-wrap {
@@ -433,7 +429,7 @@ input[type="submit"]{
   opacity: 0;
 }
 .tab-switch:checked+.tab-label {
-  background: #325A8C;
+  background: rgb(78, 154, 248);
 }
 .tab-switch:checked+.tab-label+.tab-content {
   height: auto;
@@ -456,3 +452,5 @@ input[type="submit"]{
 .comment-form-url {
   display: nome;
 }
+
+

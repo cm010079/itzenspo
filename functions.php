@@ -1,11 +1,5 @@
 <?php
 
-// $myteam = array(
-//   'posts_per_page' => 4, // 表示する件数
-//   'orderby'        => 'date', // 日付でソート
-//   'order'          => 'DESC', // DESCで最新から表示、ASCで最古から表示
-//   'tag'            => 'tokyo' // 表示したいタグのスラッグを指定
-// );
 
 function my_scripts() {
   wp_enqueue_script( 'jquery' );
@@ -53,4 +47,16 @@ function view_youtube($target_text){
   $youtube_view_url = "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/".$match[1]."\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope\; picture-in-picture\" allowfullscreen></iframe>";  
   echo $youtube_view_url;
 }
+
+function Include_my_php($params = array()) {
+  extract(shortcode_atts(array(
+      'file' => 'default'
+  ), $params));
+  ob_start();
+  include(get_theme_root() . '/' . get_template() . "/$file.php");
+  return ob_get_clean();
+}
+add_shortcode('myphp', 'Include_my_php');
+
 ?>
+
