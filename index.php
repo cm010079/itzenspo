@@ -10,20 +10,20 @@
     ); ?>
     <div class="movie_list">
       <article>
-        <?php $member_query = new WP_Query( $args ); ?>
-        <?php while ( $member_query->have_posts() ) : $member_query->the_post(); ?>
-        <section>
-              <h2 class="post_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2><br>
-              <div class="post-meta"><?php the_time('Y年n月j日'); ?> <?php the_time('H:i'); ?><?php the_content(); ?></div><br>
+        <?php $member_query = new WP_Query($args); ?>
+        <?php while ($member_query->have_posts()) : $member_query->the_post(); ?>
+          <section>
+            <h2 class="post_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2><br>
+            <div class="post-meta"><?php the_time('Y年n月j日'); ?> <?php the_time('H:i'); ?><?php the_content(); ?></div><br>
 
-              <!-- Youtube・いいねボタン・コメントを表示する -->
-              <?php 
-                $target_text = get_field('youtube_url');
-                view_youtube($target_text);
-                if(function_exists('wp_ulike')) wp_ulike('get');
-                comments_template();
-              ?>
-        </section><br>
+            <!-- Youtube・いいねボタン・コメントを表示する -->
+            <?php
+            $target_text = get_field('youtube_url');
+            view_youtube($target_text);
+            if (function_exists('wp_ulike')) wp_ulike('get');
+            comments_template();
+            ?>
+          </section><br>
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
       </article>
@@ -38,16 +38,16 @@
     ); ?>
     <div class="movie_list">
       <article>
-        <?php $member_query = new WP_Query( $args ); ?>
-        <?php while ( $member_query->have_posts() ) : $member_query->the_post(); ?>
-        <section>
-          <h2 class="member-name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-          
-          <p class="post-meta">
-                <img class="member-avatar" src="<?php the_field('news_img'); ?>">
-                <span class="post-date"><?php the_time('Y年n月j日'); ?> <?php the_time('H:i'); ?></span>
-                <?php the_content(); ?>
-          </p>
+        <?php $member_query = new WP_Query($args); ?>
+        <?php while ($member_query->have_posts()) : $member_query->the_post(); ?>
+          <section>
+            <h2 class="member-name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+            <p class="post-meta">
+              <img class="member-avatar" src="<?php the_field('news_img'); ?>">
+              <span class="post-date"><?php the_time('Y年n月j日'); ?> <?php the_time('H:i'); ?></span>
+              <?php the_content(); ?>
+            </p>
           </section><br>
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>

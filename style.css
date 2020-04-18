@@ -3,51 +3,52 @@ Theme Name: zenspo
 Description: 全スポで使うサンプルのテーマです。
 */
 
-.pagination h2.screen-reader-text { display: none; }
+.pagination h2.screen-reader-text {
+  display: none;
+}
 
-body{
+body {
   margin: 0;
 }
 
-ul,li{
+ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-header{
+header {
   box-shadow: 0 1px 10px #eee;
   display: flex;
   align-items: center;
   padding: 20px 40px;
-  
 }
 
-.logo{
+.logo {
   width: 100px;
   height: 40px;
   margin: 0 0 0 0;
 }
 
-.logo img{
+.logo img {
   width: 50%;
   height: auto;
   display: block;
 }
 
-.pc-menu{
+.pc-menu {
   flex: 1;
 }
 
-.pc-menu ul{
+.pc-menu ul {
   display: flex;
 }
 
-.pc-menu li{
+.pc-menu li {
   margin-right: 40px;
 }
 
-header .quest_button{
+header .quest_button {
   background: #ed2281;
   width: 150px;
   height: 50px;
@@ -60,53 +61,49 @@ header .quest_button{
   transition: 300ms;
 }
 
-header .quest_button:hover{
+header .quest_button:hover {
   background: #fc577b;
 }
 
-footer{
+footer {
   background: #468ddf;
   padding: 20px;
   text-align: center;
 }
 
-.icon{
+.icon {
   width: 26px;
   height: 26px;
 }
 
-footer ul{
+footer ul {
   display: flex;
   justify-content: center;
 }
 
-.links-social{
+.links-social {
   margin: 20px 40px 40px;
 }
 
-.links-main-pages,
-.links-sub-pages{
+.links-main-pages, .links-sub-pages {
   margin: 40px;
 }
 
-.links-social li{
+.links-social li {
   padding: 0 10px;
 }
 
-.links-main-pages li,
-.links-sub-pages li{
+.links-main-pages li, .links-sub-pages li {
   padding: 0 30px;
   border-right: solid 1px #fff;
   font-size: 14px;
 }
 
-.links-main-pages li:last-child,
-.links-sub-pages li:last-child{
+.links-main-pages li:last-child, .links-sub-pages li:last-child {
   border-right: 0;
 }
 
-.links-main-pages a,
-.links-sub-pages a{
+.links-main-pages a, .links-sub-pages a {
   color: #fff;
   text-decoration: none;
 }
@@ -115,33 +112,32 @@ small {
   color: #fff;
 }
 
-.sp-only{
+.sp-only {
   display: none;
 }
 
-.icon-close{
+.icon-close {
   display: none;
-} 
+}
 
-.menu img{
+.menu img {
   width: 30px;
   height: 30px;
 }
 
 @media screen and (max-width:720px) {
-.sp-only{
-  display: inherit;
-}
-.pc-only{
-  display: none !important;
-}
-header{
-  padding: 20px;
-}
+  .sp-only {
+    display: inherit;
+  }
+  .pc-only {
+    display: none !important;
+  }
+  header {
+    padding: 20px;
+  }
 }
 
-.sp-menu a{
-  
+.sp-menu a {
   display: block;
   border-bottom: solid 1px #eee;
   text-decoration: none;
@@ -153,8 +149,7 @@ header{
   border-radius: 23px;
 }
 
-.sp-menu{
-  
+.sp-menu {
   display: none;
 }
 
@@ -162,54 +157,54 @@ header{
   .pc-only {
     display: none !important;
   }
-  .links-main-pages{
+  .links-main-pages {
     display: block;
     margin: 0 0 20px 0;
   }
-  .links-main-pages li{
+  .links-main-pages li {
     border: none;
     border-bottom: dotted 1px #fff;
     padding: 20px 0;
   }
-  .links-main-pages{
+  .links-main-pages {
     border-top: dotted 1px #fff;
   }
 }
 
-main{
+main {
   padding: 40px;
   background: #eee;
 }
 
 @media screen and (max-width:720px) {
-    main{
+  main {
     margin: 20px;
   }
 }
 
-.header{
+.header {
   font-size: 30px;
   margin-top: 0;
   color: #506ce9;
 }
 
-.main-wrapper{
+.main-wrapper {
   max-width: 640px;
   margin: auto;
 }
 
-.post-list{
+.post-list {
   padding: 15px;
   background: #fff;
   margin-bottom: 20px;
 }
 
-.post-item{
+.post-item {
   border-bottom: solid 1px #eee;
   min-height: 85px;
 }
 
-.post-item .attachment-thumbnail{
+.post-item .attachment-thumbnail {
   float: left;
   margin-right: 16px;
   width: 72px;
@@ -217,176 +212,173 @@ main{
   object-fit: cover;
 }
 
-.post-item h2{
+.post-item h2 {
   font-size: 16px;
 }
 
-.post-item h2 a{
+.post-item h2 a {
   text-decoration: none;
 }
 
-.post-item:first-child h2{
+.post-item:first-child h2 {
   margin-top: 0;
 }
 
-.post-item:last-child{
+.post-item:last-child {
   border-bottom: 0;
 }
 
-.post-item:last-child p{
+.post-item:last-child p {
   margin-bottom: 0;
 }
 
-.screen-reader-text{
+.screen-reader-text {
   display: none;
 }
 
-.pagination{
+.pagination {
   text-align: center;
 }
 
-.page-numbers{
+.page-numbers {
   background: #fff;
   padding: 10px;
   border: solid 1px #ccc;
   text-decoration: none;
 }
 
-.page-numbers.current{
+.page-numbers.current {
   background: #eee;
 }
 
-.page-numbers.next,
-.page-numbers.prev{
+.page-numbers.next, .page-numbers.prev {
   border: 0;
   background: none;
 }
 
-.breadcrumb-list{
+.breadcrumb-list {
   display: flex;
   margin-bottom: 20px;
 }
 
-.breadcrumb-item{
+.breadcrumb-item {
   margin-right: 20px;
 }
 
-.breadcrumb-item + .breadcrumb-item:before{
+.breadcrumb-item+.breadcrumb-item:before {
   display: block;
   content: ">";
   padding-right: 20px;
   float: left;
 }
 
-.image-responsive{
+.image-responsive {
   width: 100%;
   height: auto;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.post-article{
+.post-article {
   padding: 15px;
   background: #fff;
 }
 
-.post-article h1{
+.post-article h1 {
   margin-top: 0;
 }
 
-.author{
+.author {
   border-top: solid 1px #ccc;
   padding-top: 10px;
 }
 
-.navigation{
+.navigation {
   margin: 20px 0;
   padding-bottom: 20px;
 }
 
-.navigation:after{
+.navigation:after {
   display: block;
   clear: both;
   content: "";
 }
 
-.prev-page,
-.next-page{
+.prev-page, .next-page {
   width: 50%;
   box-sizing: border-box;
 }
 
-.prev-page{
+.prev-page {
   float: left;
   padding-right: 10px;
 }
 
-.next-page{
+.next-page {
   float: right;
   padding-left: 10px;
 }
 
-.comment-form label{
+.comment-form label {
   display: block;
 }
 
-.form-submit{
+.form-submit {
   text-align: center;
 }
 
-input[type="text"],
-input[type="email"]{
+input[type="text"], input[type="email"] {
   height: 32px;
   border-radius: 5px;
   border: solid 1px #ccc;
   width: 100%;
 }
 
-textarea{
+textarea {
   border-radius: 5px;
   border: solid 1px #ccc;
   width: 100%;
 }
 
-input[type="submit"]{
+input[type="submit"] {
   -webkit-appearance: quest_button;
   appearance: quest_button;
   width: 120px;
   height: 32px;
 }
 
-.movie_list section{
+.movie_list section {
   background: #fff;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 23px;
 }
 
-.movie_list section:after{
+.movie_list section:after {
   display: block;
   content: "";
   clear: both;
 }
 
-.movie_list section p{
+.movie_list section p {
   margin: 0;
 }
 
-.member-avatar{
+.member-avatar {
   float: left;
   margin-right: 10px;
   width: 120px;
   height: 120px;
 }
 
-.post_title{
+.post_title {
   font-size: 18px;
   margin: 0;
 }
 
-.post-meta{
+.post-meta {
   color: rgb(122, 122, 122);
   font-size: 14px;
   margin: 0;
@@ -395,8 +387,9 @@ input[type="submit"]{
 .tab-wrap {
   display: flex;
   flex-wrap: wrap;
-  margin:20px 0;
+  margin: 20px 0;
 }
+
 .tab-wrap:after {
   content: '';
   width: 100%;
@@ -405,6 +398,7 @@ input[type="submit"]{
   display: block;
   order: -1;
 }
+
 .tab-label {
   color: White;
   background: LightGray;
@@ -419,18 +413,22 @@ input[type="submit"]{
   border-radius: 5px 5px 0 0;
   flex: 1;
 }
+
 .tab-label:not(:last-of-type) {
   margin-right: 5px;
 }
+
 .tab-content {
   width: 100%;
   height: 0;
   overflow: hidden;
   opacity: 0;
 }
+
 .tab-switch:checked+.tab-label {
   background: rgb(78, 154, 248);
 }
+
 .tab-switch:checked+.tab-label+.tab-content {
   height: auto;
   overflow: auto;
@@ -439,18 +437,19 @@ input[type="submit"]{
   transition: .5s opacity;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
+
 .tab-switch {
   display: none;
 }
 
 .comment-notes {
-  display: none ;
+  display: none;
 }
+
 .comment-form-email {
   display: nome;
 }
+
 .comment-form-url {
   display: nome;
 }
-
-

@@ -9,7 +9,7 @@
     <li><a href="#">プログラミングコース</a></li>
     <li><a href="#">Webデザインコース</a></li>
   </ul> -->
-  
+
   <ul class="links-sub-pages pc-only">
     <li><a href="#">お問い合わせ</a></li>
     <li><a href="#">利用規約</a></li>
@@ -21,4 +21,5 @@
 
 <?php wp_footer(); ?>
 </body>
+
 </html>
