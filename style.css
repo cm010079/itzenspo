@@ -15,31 +15,13 @@ Description: 全スポで使うサンプルのテーマです。
 
 body {
   margin: 0;
+  font-family: 'メイリオ', 'Meiryo', sans-serif;
 }
 
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.links-main-pages, .links-sub-pages {
-  margin: 40px;
-}
-
-.links-main-pages li, .links-sub-pages li {
-  padding: 0 30px;
-  border-right: solid 1px #fff;
-  font-size: 14px;
-}
-
-.links-main-pages li:last-child, .links-sub-pages li:last-child {
-  border-right: 0;
-}
-
-.links-main-pages a, .links-sub-pages a {
-  color: #fff;
-  text-decoration: none;
 }
 
 small {

@@ -28,7 +28,6 @@
         <?php wp_reset_postdata(); ?>
       </article>
     </div>
-    <div class="text-center"><a href="/member/">もっと見る</a></div>
 
     <h1 class="header">News</h1>
     <?php
@@ -53,7 +52,6 @@
         <?php wp_reset_postdata(); ?>
       </article>
     </div>
-    <div class="text-center"><a href="/member/">もっと見る</a></div>
 </main>
 
 <?php get_footer(); ?>

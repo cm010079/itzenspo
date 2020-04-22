@@ -16,9 +16,12 @@
 <body <?php body_class(); ?>>
 
   <header>
-    <!-- <h1 class="logo">
+    <h1 class="logo">
       <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/character.gif"></a>
-    </h1> -->
+
+      <!-- <a href="#">特定商取引法に基づく表示</a></li> -->
+    </h1>
+    <a class="top_title">IT ZEN-SPO !!</a>
 
     <!-- Navigation -->
     <nav id="navi" class="navi" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
@@ -62,8 +65,3 @@
       </div>
 
   </header>
-
-
-
-
-  </nav>

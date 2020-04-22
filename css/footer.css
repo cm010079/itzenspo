@@ -1,15 +1,45 @@
 footer {
   background: #468ddf;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
-
-/* .icon {
-  width: 26px;
-  height: 26px;
-} */
 
 footer ul {
   display: flex;
   justify-content: center;
+}
+
+.links-pages {
+  margin: 40px;
+}
+
+.links-pages li {
+  padding: 0 30px;
+  border-right: solid 1px #fff;
+  font-size: 14px;
+}
+
+.links-pages li:last-child {
+  border-right: 0;
+}
+
+.links-pages a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width:720px) {
+  .links-pages {
+    margin: 20px;
+  }
+  .links-pages {
+    display: block;
+    float: none;
+    /*ADD*/
+  }
+  .links-pages li {
+    padding: 0 30px;
+    border-right: none;
+    font-size: 14px;
+  }
 }
