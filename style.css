@@ -3,6 +3,12 @@ Theme Name: zenspo
 Description: 全スポで使うサンプルのテーマです。
 */
 
+@import url('./css/header.css');
+@import url('./css/footer.css');
+@import url('./css/tab.css');
+@import url('./css/comment.css');
+/* main */
+
 .pagination h2.screen-reader-text {
   display: none;
 }
@@ -17,80 +23,8 @@ ul, li {
   list-style: none;
 }
 
-header {
-  box-shadow: 0 1px 10px #eee;
-  display: flex;
-  align-items: center;
-  padding: 20px 40px;
-}
-
-.logo {
-  width: 100px;
-  height: 40px;
-  margin: 0 0 0 0;
-}
-
-.logo img {
-  width: 50%;
-  height: auto;
-  display: block;
-}
-
-.pc-menu {
-  flex: 1;
-}
-
-.pc-menu ul {
-  display: flex;
-}
-
-.pc-menu li {
-  margin-right: 40px;
-}
-
-header .quest_button {
-  background: #ed2281;
-  width: 150px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  display: block;
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 300ms;
-}
-
-header .quest_button:hover {
-  background: #fc577b;
-}
-
-footer {
-  background: #468ddf;
-  padding: 20px;
-  text-align: center;
-}
-
-.icon {
-  width: 26px;
-  height: 26px;
-}
-
-footer ul {
-  display: flex;
-  justify-content: center;
-}
-
-.links-social {
-  margin: 20px 40px 40px;
-}
-
 .links-main-pages, .links-sub-pages {
   margin: 40px;
-}
-
-.links-social li {
-  padding: 0 10px;
 }
 
 .links-main-pages li, .links-sub-pages li {
@@ -112,164 +46,9 @@ small {
   color: #fff;
 }
 
-.sp-only {
-  display: none;
-}
-
-.icon-close {
-  display: none;
-}
-
-.menu img {
-  width: 30px;
-  height: 30px;
-}
-
-@media screen and (max-width:720px) {
-  .sp-only {
-    display: inherit;
-  }
-  .pc-only {
-    display: none !important;
-  }
-  header {
-    padding: 20px;
-  }
-}
-
-.sp-menu a {
-  display: block;
-  border-bottom: solid 1px #eee;
-  text-decoration: none;
-  padding: 10px 20px;
-  background-image: url("images/left-arrow.png");
-  background-size: 10px 20px;
-  background-position: right 20px center;
-  background-repeat: no-repeat;
-  border-radius: 23px;
-}
-
-.sp-menu {
-  display: none;
-}
-
-@media screen and (max-width:720px) {
-  .pc-only {
-    display: none !important;
-  }
-  .links-main-pages {
-    display: block;
-    margin: 0 0 20px 0;
-  }
-  .links-main-pages li {
-    border: none;
-    border-bottom: dotted 1px #fff;
-    padding: 20px 0;
-  }
-  .links-main-pages {
-    border-top: dotted 1px #fff;
-  }
-}
-
-main {
-  padding: 40px;
-  background: #eee;
-}
-
-@media screen and (max-width:720px) {
-  main {
-    margin: 20px;
-  }
-}
-
-.header {
-  font-size: 30px;
-  margin-top: 0;
-  color: #506ce9;
-}
-
 .main-wrapper {
-  max-width: 640px;
+  /* max-width: 840px; */
   margin: auto;
-}
-
-.post-list {
-  padding: 15px;
-  background: #fff;
-  margin-bottom: 20px;
-}
-
-.post-item {
-  border-bottom: solid 1px #eee;
-  min-height: 85px;
-}
-
-.post-item .attachment-thumbnail {
-  float: left;
-  margin-right: 16px;
-  width: 72px;
-  height: 72px;
-  object-fit: cover;
-}
-
-.post-item h2 {
-  font-size: 16px;
-}
-
-.post-item h2 a {
-  text-decoration: none;
-}
-
-.post-item:first-child h2 {
-  margin-top: 0;
-}
-
-.post-item:last-child {
-  border-bottom: 0;
-}
-
-.post-item:last-child p {
-  margin-bottom: 0;
-}
-
-.screen-reader-text {
-  display: none;
-}
-
-.pagination {
-  text-align: center;
-}
-
-.page-numbers {
-  background: #fff;
-  padding: 10px;
-  border: solid 1px #ccc;
-  text-decoration: none;
-}
-
-.page-numbers.current {
-  background: #eee;
-}
-
-.page-numbers.next, .page-numbers.prev {
-  border: 0;
-  background: none;
-}
-
-.breadcrumb-list {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.breadcrumb-item {
-  margin-right: 20px;
-}
-
-.breadcrumb-item+.breadcrumb-item:before {
-  display: block;
-  content: ">";
-  padding-right: 20px;
-  float: left;
 }
 
 .image-responsive {
@@ -295,17 +74,6 @@ main {
   padding-top: 10px;
 }
 
-.navigation {
-  margin: 20px 0;
-  padding-bottom: 20px;
-}
-
-.navigation:after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
 .prev-page, .next-page {
   width: 50%;
   box-sizing: border-box;
@@ -329,31 +97,11 @@ main {
   text-align: center;
 }
 
-input[type="text"], input[type="email"] {
-  height: 32px;
-  border-radius: 5px;
-  border: solid 1px #ccc;
-  width: 100%;
-}
-
-textarea {
-  border-radius: 5px;
-  border: solid 1px #ccc;
-  width: 100%;
-}
-
-input[type="submit"] {
-  -webkit-appearance: quest_button;
-  appearance: quest_button;
-  width: 120px;
-  height: 32px;
-}
-
 .movie_list section {
   background: #fff;
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 23px;
+  border-radius: 10px;
 }
 
 .movie_list section:after {
@@ -366,13 +114,6 @@ input[type="submit"] {
   margin: 0;
 }
 
-.member-avatar {
-  float: left;
-  margin-right: 10px;
-  width: 120px;
-  height: 120px;
-}
-
 .post_title {
   font-size: 18px;
   margin: 0;
@@ -382,74 +123,4 @@ input[type="submit"] {
   color: rgb(122, 122, 122);
   font-size: 14px;
   margin: 0;
-}
-
-.tab-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px 0;
-}
-
-.tab-wrap:after {
-  content: '';
-  width: 100%;
-  height: 3px;
-  background: #325A8C;
-  display: block;
-  order: -1;
-}
-
-.tab-label {
-  color: White;
-  background: LightGray;
-  font-weight: bold;
-  white-space: nowrap;
-  text-align: center;
-  padding: 10px .5em;
-  order: -1;
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
-  border-radius: 5px 5px 0 0;
-  flex: 1;
-}
-
-.tab-label:not(:last-of-type) {
-  margin-right: 5px;
-}
-
-.tab-content {
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-}
-
-.tab-switch:checked+.tab-label {
-  background: rgb(78, 154, 248);
-}
-
-.tab-switch:checked+.tab-label+.tab-content {
-  height: auto;
-  overflow: auto;
-  padding: 15px;
-  opacity: 1;
-  transition: .5s opacity;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-}
-
-.tab-switch {
-  display: none;
-}
-
-.comment-notes {
-  display: none;
-}
-
-.comment-form-email {
-  display: nome;
-}
-
-.comment-form-url {
-  display: nome;
 }

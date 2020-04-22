@@ -1,0 +1,15 @@
+footer {
+  background: #468ddf;
+  padding: 20px;
+  text-align: center;
+}
+
+/* .icon {
+  width: 26px;
+  height: 26px;
+} */
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}

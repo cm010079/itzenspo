@@ -1,0 +1,19 @@
+input[type="text"], input[type="email"] {
+  height: 32px;
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  width: 100%;
+}
+
+textarea {
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  width: 100%;
+}
+
+input[type="submit"] {
+  -webkit-appearance: quest_button;
+  appearance: quest_button;
+  width: 120px;
+  height: 32px;
+}

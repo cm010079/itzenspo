@@ -51,6 +51,14 @@ function view_youtube($target_text)
   $youtube_view_url = "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/" . $match[1] . "\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope\; picture-in-picture\" allowfullscreen></iframe>";
   echo $youtube_view_url;
 }
+//YoutubeのURLから埋め込みURLを出力する
+function autoplay_youtube($target_text)
+{
+  preg_match('/watch\?v=(\w+([-.]\w+)*).*/', $target_text, $match); //正規表現で個別IDを取得する
+
+  $youtube_view_url = "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/" . $match[1] . "?autoplay=0\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope\; picture-in-picture\" allowfullscreen></iframe>";
+  echo $youtube_view_url;
+}
 
 function Include_my_php($params = array())
 {
@@ -62,5 +70,9 @@ function Include_my_php($params = array())
   return ob_get_clean();
 }
 add_shortcode('myphp', 'Include_my_php');
+
+
+// カスタムメニューの「場所」を設定
+register_nav_menu('header-navi', 'ヘッダーナビ');
 
 ?>

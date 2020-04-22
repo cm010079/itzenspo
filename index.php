@@ -19,7 +19,7 @@
             <!-- Youtube・いいねボタン・コメントを表示する -->
             <?php
             $target_text = get_field('youtube_url');
-            view_youtube($target_text);
+            autoplay_youtube($target_text);
             if (function_exists('wp_ulike')) wp_ulike('get');
             comments_template();
             ?>
