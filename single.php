@@ -35,7 +35,9 @@
         </div>
       </div>
     </main>
-    <aside>right</aside>
+    <aside>
+      <?php get_sidebar($name); ?>
+    </aside>
   </div>
 </body>
 <?php get_footer(); ?>

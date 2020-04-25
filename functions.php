@@ -75,4 +75,48 @@ add_shortcode('myphp', 'Include_my_php');
 // カスタムメニューの「場所」を設定
 register_nav_menu('header-navi', 'ヘッダーナビ');
 
+register_sidebar($args);
+
+
 ?>
+<?php
+//コメント一覧用の表示を提供するコールバック関数
+function show_comment($comment)
+{
+?>
+  <li <?php comment_class(); ?> class='comment_colum'>
+    <a href="<?php echo get_permalink($comment->comment_post_ID); ?>#comment-<?php comment_ID(); ?>">
+      <?php
+      if ($comment->comment_parent != 0) {
+        echo '<i class="fa fa-level-down fa-rotate-180" aria-hidden="true"></i>';
+      }
+      ?>
+      <i class="fa fa-user"></i>
+      <?php echo get_comment_author(); ?> さん<br>
+      (<?php comment_date('Y年n月j日', get_comment_ID()); ?>)<br />
+      <?php
+      $post_data = get_post($comment->comment_post_ID);
+      echo $post_data->post_title;
+      ?>
+
+      <br />
+
+      <?php
+      $my_comment_content = strip_tags(get_comment_text());
+      if (mb_strlen($my_comment_content, "UTF-8") > 100) {
+        $my_comment_content = mb_substr($my_comment_content, 0, 100);
+        $my_comment_content .= '...';
+      }
+
+      ?>
+
+
+      <i class="fa fa-commenting"></i>
+      <?php echo $my_comment_content; ?>
+      <p></p>
+
+
+    </a>
+
+  <?php
+}

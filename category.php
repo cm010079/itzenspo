@@ -41,7 +41,9 @@
         <?php the_posts_pagination(); ?>
       </div>
     </main>
-    <aside>right</aside>
+    <aside>
+      <?php get_sidebar($name); ?>
+    </aside>
   </div>
 </body>
 
