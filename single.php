@@ -16,7 +16,7 @@
             ?>
                 <?php $member_query = new WP_Query($args); ?>
                 <section>
-                  <h2 class="post_title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2><br>
+                  <h2><a class="post_title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                   <div class="post-meta"><?php the_time('Y年n月j日'); ?> <?php the_time('H:i'); ?><?php the_content(); ?></div><br>
 
                   <!-- Youtube・いいねボタン・コメントを表示する -->

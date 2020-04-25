@@ -1,5 +1,14 @@
 <?php
 
+// 「コメントを残す」を削除
+add_filter('comment_form_logged_in', '__return_empty_string');
+add_filter('comment_form_defaults', 'my_title_reply');
+function my_title_reply($defaults)
+{
+  $defaults['title_reply'] = '';
+  return $defaults;
+}
+
 
 function my_scripts()
 {
@@ -74,49 +83,23 @@ add_shortcode('myphp', 'Include_my_php');
 
 // カスタムメニューの「場所」を設定
 register_nav_menu('header-navi', 'ヘッダーナビ');
-
 register_sidebar($args);
-
-
 ?>
+
+
 <?php
-//コメント一覧用の表示を提供するコールバック関数
-function show_comment($comment)
+function show_comments_number()
 {
+  $num_comments = get_comments_number(); //「post_id」は投稿・固定ページのIDを入れる
+  if ($num_comments > 0) {
 ?>
-  <li <?php comment_class(); ?> class='comment_colum'>
-    <a href="<?php echo get_permalink($comment->comment_post_ID); ?>#comment-<?php comment_ID(); ?>">
-      <?php
-      if ($comment->comment_parent != 0) {
-        echo '<i class="fa fa-level-down fa-rotate-180" aria-hidden="true"></i>';
-      }
-      ?>
-      <i class="fa fa-user"></i>
-      <?php echo get_comment_author(); ?> さん<br>
-      (<?php comment_date('Y年n月j日', get_comment_ID()); ?>)<br />
-      <?php
-      $post_data = get_post($comment->comment_post_ID);
-      echo $post_data->post_title;
-      ?>
-
-      <br />
-
-      <?php
-      $my_comment_content = strip_tags(get_comment_text());
-      if (mb_strlen($my_comment_content, "UTF-8") > 100) {
-        $my_comment_content = mb_substr($my_comment_content, 0, 100);
-        $my_comment_content .= '...';
-      }
-
-      ?>
-
-
-      <i class="fa fa-commenting"></i>
-      <?php echo $my_comment_content; ?>
-      <p></p>
-
-
-    </a>
-
+    <p class="comments_number">コメントが<?php echo $num_comments; ?>件あります！</p>
   <?php
+  } else {
+  ?>
+    <p class="comments_number_zero">コメントはまだありません</p>
+<?php
+  }
+  // echo $num_comments; //「承認済み」のコメント数を取得、表示する
 }
+?>

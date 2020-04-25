@@ -21,3 +21,22 @@ input[type="submit"] {
 .comment-form label {
   display: block;
 }
+
+.comments_number {
+  color: var(--sub-bg-color);
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.comments_number_zero {
+  color: var(--accent-color);
+  background-color: var(--sub-bg-color);
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  font-size: 12px;
+  border: solid 2px var(--accent-color);
+}

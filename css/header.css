@@ -68,7 +68,8 @@
 }
 
 .navi-in a:hover {
-  background-color: #65bdf0;
+  color: var(--sub-bg-color);
+  background-color: var(--main-color);
   transition: all 0.3s ease 0s;
 }
 
