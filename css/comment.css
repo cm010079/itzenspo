@@ -17,3 +17,7 @@ input[type="submit"] {
   width: 120px;
   height: 32px;
 }
+
+.comment-form label {
+  display: block;
+}

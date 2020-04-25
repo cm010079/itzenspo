@@ -130,9 +130,9 @@
 }
 
 header {
-  border-top: solid 5px #468ddf;
-  border-bottom: linear-gradient(to bottom, #eee, #468ddf);
-  /* background: linear-gradient(to bottome, #eee, #468ddf); */
+  border-top: solid 10px #468ddf;
+  border-bottom: solid 10px #468ddf;
+  /* border-bottom: linear-gradient(to bottom, #eee, #468ddf); */
   box-shadow: 0 1px 10px #eee;
   display: flex;
   align-items: center;
@@ -141,7 +141,8 @@ header {
 
 .top_title {
   font-size: larger;
-  f;
+  font-weight: bold;
+  color: #468ddf;
 }
 
 .logo {

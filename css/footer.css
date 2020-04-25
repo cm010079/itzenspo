@@ -9,6 +9,10 @@ footer ul {
   justify-content: center;
 }
 
+small {
+  color: #fff;
+}
+
 .links-pages {
   margin: 40px;
 }
