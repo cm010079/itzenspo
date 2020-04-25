@@ -130,8 +130,8 @@
 }
 
 header {
-  border-top: solid 10px #468ddf;
-  border-bottom: solid 10px #468ddf;
+  border-top: solid 10px var(--main-color);
+  border-bottom: solid 10px var(--main-color);
   /* border-bottom: linear-gradient(to bottom, #eee, #468ddf); */
   box-shadow: 0 1px 10px #eee;
   display: flex;
@@ -142,7 +142,7 @@ header {
 .top_title {
   font-size: larger;
   font-weight: bold;
-  color: #468ddf;
+  color: var(--main-color);
 }
 
 .logo {
@@ -247,11 +247,6 @@ header {
 .menu img {
   width: 30px;
   height: 30px;
-}
-
-main {
-  padding: 5px;
-  background: rgb(240, 245, 248);
 }
 
 @media screen and (max-width:720px) {

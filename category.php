@@ -20,7 +20,7 @@
                 <?
                 }
                 ?>
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <h2><a class="post_title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                 <p class="post-meta">
                   <span class="post-date"><?php the_time('Y年n月j日'); ?> <?php the_time('H:i'); ?></span>
                   <span class="post-categories"><?php the_category(','); ?></span>
