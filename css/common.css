@@ -42,13 +42,13 @@ a:active {
 }
 
 body {
-  /* margin: 0; */
   font-family: 'メイリオ', 'Meiryo', sans-serif;
-  /* width: auto; */
+  width: auto;
   margin: 0 auto;
   min-height: 100vh;
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
+  /* padding: 60px 0 0 0; */
 }
 
 ul, li {
@@ -58,11 +58,12 @@ ul, li {
 }
 
 .colum_style {
+  margin: top;
   background-color: var(--main-bg-color);
   max-width: 1000px;
   /* width: 1000px; */
-  margin: 0 auto;
-  padding: 0;
+  /* margin: 0 auto; */
+  padding: 50px;
   display: flex;
   flex: 1;
 }

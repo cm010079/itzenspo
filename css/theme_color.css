@@ -1,7 +1,9 @@
 :root {
   --main-color: royalblue;
+  --main-color_a: (royalblue, 0.6);
   --sub-color: dimgray;
   --main-bg-color: aliceblue;
   --sub-bg-color: white;
   --accent-color: coral;
+  --comment-color: deepskyblue;
 }

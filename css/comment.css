@@ -29,6 +29,8 @@ input[type="submit"] {
   width: 200px;
   text-align: center;
   font-size: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .comments_number_zero {
@@ -39,6 +41,25 @@ input[type="submit"] {
   text-align: center;
   font-size: 12px;
   border: solid 2px var(--accent-color);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* ホバー状態 */
+
+.comments_number:hover {
+  color: var(--sub-bg-color);
+  text-decoration: underline;
+}
+
+/* クリックされた状態 */
+
+.comments_number:active {
+  color: var(--main-color);
+}
+
+.comments_number_zero:active {
+  color: var(--main-color);
 }
 
 #comments {
@@ -73,13 +94,15 @@ input[type="submit"] {
 
 .comment-author {
   /* アバター */
-  width: 15%;
+  width: 20%;
   float: left;
   overflow: hidden;
 }
 
 .comment-author img {
   display: block;
+  border-radius: 50%;
+  zoom: 1.5;
 }
 
 span.says {
@@ -102,7 +125,7 @@ span.says {
   padding-left: 20px;
   max-width: 350px;
   border-radius: 12px;
-  background: var(--accent-color);
+  background: var(--comment-color);
   font-size: 15px;
 }
 
@@ -113,7 +136,7 @@ span.says {
   top: 3px;
   left: -19px;
   border: 8px solid transparent;
-  border-right: 18px solid var(--accent-color);
+  border-right: 18px solid var(--comment-color);
   -webkit-transform: rotate(35deg);
   transform: rotate(35deg);
 }
