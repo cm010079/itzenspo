@@ -3,6 +3,7 @@ Theme Name: zenspo
 Description: 全スポで使うサンプルのテーマです。
 */
 
+@import url('./css/theme_color.css');
 @import url('./css/common.css');
 @import url('./css/header.css');
 @import url('./css/footer.css');

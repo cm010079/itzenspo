@@ -2,12 +2,9 @@
 
 /* ノーマル状態 */
 
-:root {
-  --main-color: royalblue;
-  --sub-color: dimgray;
-  --main-bg-color: aliceblue;
-  --sub-bg-color: white;
-  --accent-color: coral
+html {
+  background-color: var(--main-bg-color);
+  /* 周囲の背景色 */
 }
 
 a {
@@ -48,10 +45,9 @@ body {
   /* margin: 0; */
   font-family: 'メイリオ', 'Meiryo', sans-serif;
   /* width: auto; */
-  width: auto;
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
 }
 
@@ -62,14 +58,18 @@ ul, li {
 }
 
 .colum_style {
-  /* max-width: 840px; */
+  background-color: var(--main-bg-color);
+  max-width: 1000px;
+  /* width: 1000px; */
+  margin: 0 auto;
+  padding: 0;
   display: flex;
   flex: 1;
 }
 
 main {
+  background-color: var(--main-bg-color);
   /* padding: 30px; */
-  background: var(--main-bg-color);
   /* max-width: 840px; */
   /* margin: auto; */
   flex: 1;

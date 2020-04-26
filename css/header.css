@@ -65,6 +65,7 @@
   text-decoration: none;
   display: block;
   font-size: 16px;
+  background-color: var(--main-bg-color);
 }
 
 .navi-in a:hover {
