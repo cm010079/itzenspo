@@ -40,3 +40,98 @@ input[type="submit"] {
   font-size: 12px;
   border: solid 2px var(--accent-color);
 }
+
+#comments {
+  display: none;
+}
+
+.comment-lists-wrap {}
+
+.comment-lists-wrap ol {
+  list-style-position: inside;
+}
+
+.comment-lists-wrap ol li {
+  overflow: hidden;
+}
+
+.comment-lists-wrap ol li.even {
+  /* コメントグループの区切り */
+  border-bottom: 1px solid #F9003C;
+}
+
+.comment-lists-wrap ol .comment {}
+
+.comment-lists-wrap ol .children {
+  /* 返信コメントの部分 */
+  margin-left: 10%;
+}
+
+.reply {
+  display: none;
+}
+
+.comment-author {
+  /* アバター */
+  width: 15%;
+  float: left;
+  overflow: hidden;
+}
+
+.comment-author img {
+  display: block;
+}
+
+span.says {
+  /* コメント投稿者の「より」を非表示 */
+  display: none;
+}
+
+.comment-body {
+  clear: both;
+  margin-top: 2%;
+  overflow: hidden;
+}
+
+.comment-body p {
+  display: inline-block;
+  position: relative;
+  margin: 0 30px 0 0;
+  padding: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 350px;
+  border-radius: 12px;
+  background: var(--accent-color);
+  font-size: 15px;
+}
+
+.comment-body p:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: -19px;
+  border: 8px solid transparent;
+  border-right: 18px solid var(--accent-color);
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+
+.fn {
+  /* コメント投稿者の名前の部分（デフォルトではイタリックになってる部分） */
+  display: block;
+  font-style: normal;
+  clear: both;
+  text-align: center;
+}
+
+.comment-meta {
+  /* コメント投稿日 */
+  text-align: right;
+  font-size: 6px;
+}
+
+.comment-meta a {
+  color: #626262;
+}
