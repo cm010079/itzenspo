@@ -107,22 +107,35 @@ function show_tab_content($country, $key)
     }
 
     // The Query
-    $the_query = new WP_Query($args);
+    if ($key != 6) {
+      $the_query = new WP_Query($args);
 
-    // The Loop
-    if ($the_query->have_posts()) {
-      echo '<ul>';
-      while ($the_query->have_posts()) {
-        $the_query->the_post();
-        if ($key == 4) { //newsはYoutubeを表示しない
-          show_content(true, true, true, false, true, true, false);
-        } else {
-          show_content(true, true, true, true, true, true, false);
+      // The Loop
+      if ($the_query->have_posts()) {
+        echo '<ul>';
+        while ($the_query->have_posts()) {
+          $the_query->the_post();
+          if ($key == 4) { //newsはYoutubeを表示しない
+            show_content(true, true, true, false, true, true, false);
+          } else {
+            show_content(true, true, true, true, true, true, false);
+          }
         }
+        echo '</ul>';
+        /* Restore original Post Data */
+        wp_reset_postdata();
       }
-      echo '</ul>';
-      /* Restore original Post Data */
-      wp_reset_postdata();
+    } else {
+      if (have_posts()) {
+        echo '<ul>';
+        while (have_posts()) {
+          the_post();
+          show_content(true, true, true, true, true, false, true);
+        }
+        echo '</ul>';
+        /* Restore original Post Data */
+        wp_reset_postdata();
+      }
     }
 
     ?>

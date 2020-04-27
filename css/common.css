@@ -43,12 +43,8 @@ a:active {
 
 body {
   font-family: 'メイリオ', 'Meiryo', sans-serif;
-  width: auto;
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /* padding: 60px 0 0 0; */
 }
 
 ul, li {
@@ -58,21 +54,18 @@ ul, li {
 }
 
 .colum_style {
-  margin: top;
+  margin: top auto;
   background-color: var(--main-bg-color);
   max-width: 1000px;
-  /* width: 1000px; */
-  /* margin: 0 auto; */
-  padding: 50px;
+  margin: 0 auto;
+  padding-top: 50px;
   display: flex;
-  flex: 1;
 }
 
 main {
   background-color: var(--main-bg-color);
-  /* padding: 30px; */
-  /* max-width: 840px; */
-  /* margin: auto; */
+  padding: 0;
+  margin: 0;
   flex: 1;
 }
 
@@ -140,11 +133,15 @@ aside {
   padding-left: 10px;
 }
 
+.movie_list {
+  margin-top: 10px;
+}
+
 .movie_list section {
   background: var(--sub-bg-color);
   padding-bottom: 10px;
   padding-left: 5px;
-  padding-right: 5px;
+  padding-right: 10px;
   /* margin: 5px; */
   border-radius: 10px;
 }
@@ -181,13 +178,25 @@ aside {
 }
 
 @media screen and (max-width: 720px) {
-  body, nav, aside {
+  /* body, nav, aside {
     width: 100%;
-  }
+  } */
   .colum_style {
     flex-direction: column;
   }
   main {
     order: -1;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .colum_style {
+    margin: top;
+    background-color: var(--main-bg-color);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: block;
+    /* SPモードはFlexを停止する必要がある（asideがマージンされる） */
   }
 }

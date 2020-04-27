@@ -23,7 +23,7 @@
 @media (max-width:768px) {
   .main-navigation {
     display: none;
-    width: 150px;
+    width: 100px;
     background: var(--main-color);
     height: 100vh;
     right: 0;
@@ -31,7 +31,7 @@
   .main-navigation ul {
     flex-direction: column;
     margin-top: 58px;
-    margin-left: 58px;
+    margin-left: 5px;
     height: auto;
     align-items: flex-start;
     color: var(--main-color);
@@ -66,29 +66,6 @@
   }
 }
 
-/* shop */
-
-@media (max-width:768px) {
-  .shop-table th, .shop-table td {
-    display: block;
-    width: auto;
-  }
-  .shop-table th {
-    border-bottom: 0;
-    padding-bottom: 0;
-  }
-  .shop-table td {
-    padding-top: 0;
-  }
-  .shop-map {
-    margin-bottom: 40px;
-  }
-  .shop-map img {
-    width: 100%;
-    height: auto;
-  }
-}
-
 /* menu */
 
 @media (max-width:768px) {
@@ -105,25 +82,6 @@
   }
   .menu-list-item-description {
     padding-left: 102px;
-  }
-}
-
-/* special */
-
-@media (max-width:768px) {
-  .special-list {
-    width: auto;
-    justify-content: center;
-  }
-  .wp-block-image img {
-    max-width: 100%;
-    height: 300px;
-  }
-  .special-list .wp-block-image {
-    margin: 0 30px 20px !important;
-  }
-  .special-list .wp-block-image:nth-child(3n) {
-    margin: 0 30px 20px !important;
   }
 }
 
