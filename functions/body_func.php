@@ -140,5 +140,6 @@ function show_tab_content($country, $key)
 
     ?>
   </div>
+
 <?php
 }

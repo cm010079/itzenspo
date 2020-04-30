@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <body>
+  <?php echo do_shortcode('[metaslider id="164"]'); ?>
   <div class="colum_style">
     <main>
       <h1 class="colum_title">Live Movies</h1>
