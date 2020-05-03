@@ -42,15 +42,22 @@ a:active {
 }
 
 body {
-  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+    "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
+    "Meiryo", "verdana", sans-serif;
   margin: 0 auto;
   min-height: 100vh;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+iframe {
+  box-shadow: var(--shadow);
 }
 
 .colum_style {
@@ -71,6 +78,17 @@ main {
 
 .colum_title {
   color: var(--sub-color);
+  padding: 0 0.5em;
+  /* margin: 2em 0; */
+  /* color: #232323; */
+  /* background: #fff8e8; */
+  border-left: solid 10px var(--main-color);
+  padding: 5px;
+  background-color: var(--main-color);
+  color: var(--sub-bg-color);
+  font-size: 24px;
+  border-radius: 2px;
+  box-shadow: var(--shadow);
 }
 
 aside {
@@ -94,8 +112,9 @@ aside {
 
 .widget {
   background: var(--sub-bg-color);
-  border-radius: 15px;
+  border-radius: 2px;
   margin-bottom: 50px;
+  box-shadow: var(--shadow);
 }
 
 /* .widget-area {} */
@@ -105,7 +124,8 @@ aside {
   background-color: var(--main-color);
   color: var(--sub-bg-color);
   font-size: 16px;
-  border-radius: 10px;
+  border-radius: 2px;
+  box-shadow: var(--shadow);
 }
 
 .wp_counter_span {
@@ -118,7 +138,8 @@ aside {
   margin-top: 0;
 }
 
-.prev-page, .next-page {
+.prev-page,
+.next-page {
   width: 50%;
   box-sizing: border-box;
 }
@@ -143,7 +164,7 @@ aside {
   padding-left: 5px;
   padding-right: 10px;
   /* margin: 5px; */
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 .movie_list section:after {

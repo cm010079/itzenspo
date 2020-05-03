@@ -1,6 +1,6 @@
-/* common */
+/* 
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .column-center {
     width: auto;
     padding: 0 30px;
@@ -18,14 +18,15 @@
   }
 }
 
-/* header */
 
-@media (max-width:768px) {
+
+@media (max-width: 768px) {
   .main-navigation {
+    position: fixed;
     display: none;
     width: 100px;
     background: var(--main-color);
-    height: 100vh;
+    height: 50vh;
     right: 0;
   }
   .main-navigation ul {
@@ -58,7 +59,6 @@
   .header-close-button {
     width: 18px;
     height: 24px;
-    ;
     background-image: url(../images/menu-close-button@2x.png);
     background-size: 18px 24px;
     background-repeat: no-repeat;
@@ -66,9 +66,9 @@
   }
 }
 
-/* menu */
 
-@media (max-width:768px) {
+
+@media (max-width: 768px) {
   .menu-list {
     width: auto;
     margin: 0 30px;
@@ -85,21 +85,24 @@
   }
 }
 
-/* contact */
 
-@media (max-width:768px) {
+
+@media (max-width: 768px) {
   .contact-table th {
     line-height: 1;
   }
-  .contact-table th, .contact-table td {
+  .contact-table th,
+  .contact-table td {
     display: block;
     padding-bottom: 20px;
   }
   .contact-table textarea {
     width: auto;
   }
-  .contact-table input[type="text"], .contact-table input[type="email"], .contact-table textarea {
+  .contact-table input[type="text"],
+  .contact-table input[type="email"],
+  .contact-table textarea {
     width: 100%;
     box-sizing: border-box;
   }
-}
+} */

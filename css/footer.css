@@ -1,5 +1,5 @@
 footer {
-  background: var(--main-color);
+  background: var(--sub-color);
   padding: 10px;
   text-align: center;
 }
@@ -32,7 +32,7 @@ small {
   text-decoration: none;
 }
 
-@media only screen and (max-width:720px) {
+@media only screen and (max-width: 720px) {
   .links-pages {
     margin: 20px;
   }

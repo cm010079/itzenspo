@@ -13,3 +13,20 @@
 .page-id-114 footer {
   display: none;
 }
+
+.um-page-user {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.um-cover {
+  display: none;
+}
+
+.um-profile-body {
+  display: none;
+}
+
+.um-profile-nav {
+  display: none;
+}

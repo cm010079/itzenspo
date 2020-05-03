@@ -22,10 +22,10 @@
   <nav class="main-navigation">
     <a href="#" class="header-close-button sp-only"></a>
     <ul class="font-serif">
-      <li><a href="<?php echo esc_url(home_url('/')); ?>">TOP</a></li>
-      <li><a href="/news_list/">NEWS</a></li>
-      <li><a href="/all_movies/">MOVIES</a></li>
-      <li><a href="/contact/">CONTACT</a></li>
+      <li href="<?php echo esc_url(home_url('/')); ?>">ホーム</li>
+      <li a href="/about/">IT全スポとは</li>
+      <li a href="/all_movies/">応援しよう！</li>
+      <li a href="/contact/">おまけ</li>
     </ul>
   </nav>
 
