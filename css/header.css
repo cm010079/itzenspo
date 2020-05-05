@@ -20,7 +20,7 @@
 .main-navigation li {
   display: block;
   list-style: none;
-  margin-right: 40px;
+  margin-right: 60px;
   height: 64px;
   color: var(--sub-bg-color);
   padding-bottom: 0;
@@ -33,7 +33,7 @@
 
 .main-navigation li:hover {
   list-style: none;
-  margin-right: 40px;
+  margin-right: 60px;
   height: 57px;
   /* background: ; */
   justify-content: center;

@@ -26,9 +26,15 @@ a:active {
 }
 
 .post_title {
-  color: var(--comment-color);
-  font-size: 18px;
+  position: relative;
+  left: -10px;
+  padding: 10px;
   margin: 0;
+  background-color: var(--sub-color);
+  color: var(--sub-bg-color);
+  font-size: 20px;
+  border-radius: 2px;
+  box-shadow: var(--shadow);
 }
 
 /* 訪問済みの状態 */
@@ -74,6 +80,11 @@ main {
   padding: 0;
   margin: 0;
   flex: 1;
+}
+
+.main-wrapper {
+  max-width: 640px;
+  margin: auto;
 }
 
 .colum_title {

@@ -4,13 +4,11 @@
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-
 
   <title>
     <?php wp_title(' | ', true, 'right'); ?>
@@ -18,8 +16,6 @@
   </title>
   <?php wp_head(); ?>
 </head>
-
-
 
 <body <?php body_class(); ?>>
   <nav class="main-navigation">
@@ -32,7 +28,7 @@
 
       </a>
       <a href="/about/">
-        <li>IT全スポとは
+        <li>IT全スポとは？
           <img class='menu-icon white' src=" <?php echo get_template_directory_uri(); ?>/images/walk.png" width="30" height="30">
         </li>
 
@@ -43,10 +39,9 @@
           <img class='menu-icon white' src=" <?php echo get_template_directory_uri(); ?>/images/megahon.png" width="30" height="30">
         </li>
 
-
       </a>
       <a href="/contact/">
-        <li>おまけ
+        <li>お問い合わせ
           <img class='menu-icon white' src=" <?php echo get_template_directory_uri(); ?>/images/star.png" width="25" height="25">
         </li>
       </a>
