@@ -23,6 +23,8 @@
   margin-right: 40px;
   height: 64px;
   color: var(--sub-bg-color);
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* .main-navigation li:last-child {
@@ -32,10 +34,11 @@
 .main-navigation li:hover {
   list-style: none;
   margin-right: 40px;
-  height: 58px;
+  height: 57px;
   /* background: ; */
   justify-content: center;
-  border-bottom: solid 15px var(--comment-color);
+  border-bottom: solid 7px var(--comment-color);
+  transition: 0.2s;
 }
 
 .header-close-button {
@@ -48,3 +51,13 @@
 .font-serif a:hover {
   text-decoration: none;
 }
+
+.menu-icon {
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+/* li.test {
+  float: left;
+} */

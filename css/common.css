@@ -61,11 +61,11 @@ iframe {
 }
 
 .colum_style {
-  margin: top auto;
+  /* margin: top auto; */
   background-color: var(--main-bg-color);
   max-width: 1000px;
   margin: 0 auto;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   display: flex;
 }
 
@@ -216,7 +216,7 @@ aside {
     background-color: var(--main-bg-color);
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     display: block;
     /* SPモードはFlexを停止する必要がある（asideがマージンされる） */
   }

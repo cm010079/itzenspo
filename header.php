@@ -10,6 +10,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+
+
   <title>
     <?php wp_title(' | ', true, 'right'); ?>
     <?php bloginfo('name'); ?>
@@ -17,22 +19,36 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
 
+
+<body <?php body_class(); ?>>
   <nav class="main-navigation">
     <a href="#" class="header-close-button sp-only"></a>
     <ul class="font-serif">
       <a href="<?php echo esc_url(home_url('/')); ?>">
-        <li>ホーム</li>
+        <li>ホーム
+          <img class='menu-icon white' src=" <?php echo get_template_directory_uri(); ?>/images/home.png" width="25" height="25">
+        </li>
+
       </a>
       <a href="/about/">
-        <li>IT全スポとは</li>
+        <li>IT全スポとは
+          <img class='menu-icon white' src=" <?php echo get_template_directory_uri(); ?>/images/walk.png" width="30" height="30">
+        </li>
+
       </a>
       <a href="/all_movies/">
-        <li>応援しよう！</li>
+        <li>
+          応援しよう！
+          <img class='menu-icon white' src=" <?php echo get_template_directory_uri(); ?>/images/megahon.png" width="30" height="30">
+        </li>
+
+
       </a>
       <a href="/contact/">
-        <li>おまけ</li>
+        <li>おまけ
+          <img class='menu-icon white' src=" <?php echo get_template_directory_uri(); ?>/images/star.png" width="25" height="25">
+        </li>
       </a>
     </ul>
   </nav>

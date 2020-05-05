@@ -1,0 +1,9 @@
+.blue {
+  filter: invert(40%) sepia(99%) saturate(1000%) hue-rotate(180deg)
+    brightness(100%) contrast(145%);
+}
+
+.white {
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg)
+    brightness(107%) contrast(101%);
+}
