@@ -19,35 +19,39 @@
 
 <body <?php body_class(); ?>>
   <nav class="main-navigation">
-    <a href="#" class="header-close-button sp-only"></a>
+
     <ul class="font-serif">
       <a href="<?php echo esc_url(home_url('/')); ?>">
-        <li>ホーム
+        <li>
+          <p class='pmenu-icon'>ホーム</p>
           <img class='menu-icon white' src=" <?php echo get_template_directory_uri(); ?>/images/home.png" width="25" height="25">
         </li>
 
       </a>
       <a href="/about/">
-        <li>IT全スポとは？
+        <li>
+          <p class='pmenu-icon'>IT全スポとは？</p>
           <img class='menu-icon white' src=" <?php echo get_template_directory_uri(); ?>/images/walk.png" width="30" height="30">
         </li>
 
       </a>
       <a href="/all_movies/">
         <li>
-          応援しよう！
+          <p class='pmenu-icon'>応援しよう！</p>
           <img class='menu-icon white' src=" <?php echo get_template_directory_uri(); ?>/images/megahon.png" width="30" height="30">
         </li>
 
       </a>
       <a href="/contact/">
-        <li>お問い合わせ
-          <img class='menu-icon white' src=" <?php echo get_template_directory_uri(); ?>/images/star.png" width="25" height="25">
+        <li>
+          <p class='pmenu-icon'>お問い合わせ</p>
+          <img class=' menu-icon white' src=" <?php echo get_template_directory_uri(); ?>/images/star.png" width="25" height="25">
         </li>
       </a>
     </ul>
   </nav>
 
+  <a href="#" class="header-close-button sp-only"></a>
   <a href="#" class="header-open-button sp-only"></a>
 
   </header>

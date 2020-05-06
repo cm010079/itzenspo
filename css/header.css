@@ -27,15 +27,10 @@
   margin-bottom: 0;
 }
 
-/* .main-navigation li:last-child {
-  margin-right: 0;
-} */
-
 .main-navigation li:hover {
   list-style: none;
   margin-right: 60px;
   height: 57px;
-  /* background: ; */
   justify-content: center;
   border-bottom: solid 7px var(--comment-color);
   transition: 0.2s;
@@ -56,6 +51,14 @@
   display: block;
   max-width: 50%;
   margin: 0 auto;
+}
+
+.pmenu-icon {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 /* li.test {
